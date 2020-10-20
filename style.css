@@ -1,0 +1,671 @@
+/*================
+common css
+=================*/
+
+
+body {
+    color: #000;
+    line-height: 1.2em;
+    font-size: 14px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.bx-wrapper {
+    border: none;
+}
+
+
+/*================
+header-area css
+=================*/
+
+#header-area {}
+
+.header-area {}
+
+.top-header {
+    overflow: hidden;
+    background: #2AA2D4;
+    color: #fff;
+    height: 50px;
+}
+
+.top-left {
+    float: left;
+    width: 30%;
+}
+
+.top-left ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 10px 10px;
+}
+
+.top-left ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.top-left ul li a {
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: .3s;
+    color: #2AA2D4;
+}
+
+
+.first:hover {
+    background: #0174B0;
+    transform: rotate(360deg);
+    color: #fff;
+}
+
+.second:hover {
+    background: #41B7E5;
+    transform: rotate(360deg);
+    color: #fff;
+}
+
+.third:hover {
+    background: #D64134;
+    transform: rotate(360deg);
+    color: #fff;
+}
+
+.fourth:hover {
+    background: #DE2A32;
+    transform: rotate(360deg);
+    color: #fff;
+}
+
+.five:hover {
+    background: #EE802F;
+    transform: rotate(360deg);
+    color: #fff;
+}
+
+.top-left ul li a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.top-right {
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+
+.top-right ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-right ul li {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+}
+
+.top-right ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 5px;
+    display: block;
+}
+
+.top-right ul li a:hover {
+    color: greenyellow;
+}
+
+.top-right ul li::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background: #fff;
+    width: 2px;
+    height: 15px;
+    top: 20px;
+    right: -5px;
+}
+
+.top-right ul li:nth-child(4)::after {
+    display: none;
+}
+
+.center-header {
+    height: 140px;
+    background: #fff;
+    display: flex;
+}
+
+.logo-area {
+    flex-basis: 30%;
+    padding: 55px 15px;
+    text-align: left;
+}
+
+.logo-area img {}
+
+.search-area {
+    flex-basis: 70%;
+    padding: 55px 0px;
+    text-align: right;
+    position: relative;
+}
+
+.search-area form {
+    width: 290px;
+    overflow: hidden;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+}
+
+.search-area form input[type="text"] {
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    border: 0px;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    width: 204px;
+    float: left;
+
+}
+
+.search-area form input[type="submit"] {
+
+    border-radius: 0px 5px 5px 0px;
+    background: #2AA2D4;
+    color: #fff;
+    padding: 10px;
+    width: 66px;
+    float: right;
+    border: 0px;
+    margin: 0;
+}
+
+.search-area form input[type="submit"]:hover {
+    color: greenyellow;
+}
+
+
+/*================
+header-area / menu 
+=================*/
+
+.bottom-header {
+    background: #2A2A2A;
+    height: 55px;
+}
+
+.menu {}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+
+}
+
+.menu ul li:hover a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: greenyellow;
+    bottom: 0px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu ul li::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 20px;
+    background: #9999;
+    top: 18px;
+    right: -4px;
+}
+
+.menu ul li:nth-child(7)::after {
+    display: none;
+}
+
+.menu ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999999;
+    display: block;
+    padding: 20px 20px;
+    font-size: 14px;
+}
+
+.menu ul li ul {
+    position: absolute;
+    background: #2A2A2A;
+    color: #999;
+    width: 150px;
+    text-align: center;
+    left: -9999999px;
+    z-index: 2;
+}
+
+.menu ul li ul li {
+    width: 100%;
+    position: relative;
+}
+
+.menu ul li ul li a {
+    position: relative;
+}
+
+.menu ul li:hover ul {
+    left: 0px;
+}
+
+.menu ul li:hover ul li a::after {
+    display: none;
+}
+
+.menu ul li ul li:hover a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: greenyellow;
+    bottom: 0px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu ul li:hover ul li::after {
+    display: none;
+}
+
+
+/*================
+slider-area / menu 
+=================*/
+#slider-area {
+    margin-top: 10px;
+}
+
+.slider-area {}
+
+.slider {
+    position: fixed;
+    z-index: -2;
+}
+
+.slid {}
+
+.slid img {}
+
+
+/*================
+first-section css
+=================*/
+
+#first-section {}
+
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.first-section::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #999;
+    bottom: -30px;
+}
+
+.child {
+    flex-basis: 23%;
+}
+
+.child-2 {
+    display: flex;
+}
+
+.child-2:hover {
+    box-shadow: 10px 10px 10px #999;
+}
+
+.child-left {
+    flex-basis: 30%;
+    padding: 0 10px;
+}
+
+.child-left img {}
+
+.child-right {
+    flex-basis: 70%;
+    padding: 0 10px;
+}
+
+.child-right h3 {
+    margin-top: 0px;
+    font-size: 16px;
+    color: #2AA2D4;
+}
+
+.child-right p {}
+
+/*================
+second-section css
+=================*/
+
+#second-section {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.second-section {}
+
+.second-all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-child {
+    flex-basis: 23%;
+    position: relative;
+}
+
+.second-child:hover {
+    box-shadow: 10px 10px 10px #9999;
+}
+
+.second-child img {}
+
+.second-child h3 {}
+
+.second-child h3:hover {
+    color: #2AA2D4;
+}
+
+.second-child p {}
+
+.second-child a {
+    color: #000;
+    position: absolute;
+    bottom: 5px;
+}
+
+.second-child a:hover {
+    color: #2AA2D4;
+}
+
+
+/*================
+third-section css
+=================*/
+
+#third-section {
+    margin-bottom: 50px;
+}
+
+.third-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-child {
+    flex-basis: 23%;
+    color: #333333;
+    position: relative;
+}
+
+.third-child:hover {
+    box-shadow: 10px 10px 30px #999;
+}
+
+.third-child:nth-child(1) {
+    font-size: 25px;
+    line-height: 1.3em;
+    font-weight: normal;
+    color: #333333;
+    padding-left: 10px;
+}
+
+.third-child img {}
+
+.third-child h3 {}
+
+.third-child h3:hover {
+    color: #2AA2D4;
+}
+
+.third-child h5 {
+    opacity: .5;
+}
+
+.third-child p {}
+
+
+.third-child p,
+h3,
+h5 {
+    padding-left: 10px;
+}
+
+.third-child a {
+    color: #333;
+}
+
+.third-child a:hover {
+    color: #2AA2D4;
+}
+
+/*================
+footer-area css
+=================*/
+
+
+#footer-area {}
+
+.footer-area {
+    background: #1C1C1C;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    color: #9999;
+    position: relative;
+}
+
+.top-footer::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #999;
+    bottom: 10px;
+}
+
+.top-footer h3 {
+    color: #fff;
+}
+
+.t-footer {
+    flex-basis: 23%;
+}
+
+.t-footer:nth-child(1) p {
+    padding: 10px;
+}
+
+.blog-2 {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.blog-2::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: -10px;
+    background: #999;
+}
+
+.blog-2-1 {
+    flex-basis: 30%;
+}
+
+.blog-2-1 img {}
+
+.blog-2-2 {
+    flex-basis: 70%;
+    padding-left: 10px;
+
+}
+
+.blog-2-2 p {
+    margin: 0px;
+}
+
+.link {}
+
+.link h3 {}
+
+.link ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+.link ul li {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.link ul li a:hover {
+    color: #2AA2D4;
+}
+
+.link ul li::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: #999;
+    bottom: -9px;
+    width: 100%;
+    height: 1px;
+}
+
+.link ul li a {
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #9999;
+}
+
+.contact {}
+
+.contact form {
+    overflow: hidden;
+}
+
+.contact form input {
+    width: 80%;
+    background: #232323;
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.contact form input[type="text"] {}
+
+.contact form input[type="email"] {}
+
+.contact form textarea {
+    width: 80%;
+    background: #232323;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    height: 110px;
+    margin-left: 5px;
+
+
+
+}
+
+.contact form input[type="submit"] {
+    color: #fff;
+    width: 40%;
+}
+
+.contact form input[type="submit"]:hover {
+    background: #2AA2D4;
+    box-shadow: 5px 5px 20px #2AA2D4;
+}
+
+.bottom-footer {
+    display: flex;
+}
+
+.footer-left {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.footer-left p {
+    padding: 0px 10px;
+    color: #999;
+}
+
+.footer-right {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.footer-right p {
+     padding: 0px 10px;
+    color: #999;
+}
